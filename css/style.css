@@ -38,7 +38,7 @@ header section {
 header section h1 {
     margin: 0;
     color: white;
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: bold;
     background-color: rgba(163, 178, 199, 80%);
     /* display: inline-flex; */
@@ -87,7 +87,7 @@ nav ul li a:hover {
 main {
     grid-area: main;
 }
-
+    /* BOX */
 article.box {
     display: flex;
     flex-direction: row;
@@ -133,6 +133,7 @@ section.item img {
 section.item img:hover {
     filter: grayscale(0);
 }
+    /* CONTENT */
 .content {
     text-align: center;
     align-items: center;
@@ -143,11 +144,14 @@ section.item img:hover {
     gap: 0 5rem;
     flex-wrap: wrap;
     padding: 1rem 0 3rem 0;
+    position: relative;
 }
 .content > h2{
+    font-size: 2rem;
     background-color: rgba(163, 178, 199, 100%);
     width: 100%;
     padding: 20px 0 20px 0;
+    display: inline;
 }
 .info{
     color: black;
@@ -163,6 +167,51 @@ section.item img:hover {
     box-shadow: 5px 10px;
     background-color: white;
 }
+
+    /*PICTURE */
+.pictures{
+    text-align: center;
+}
+.slider{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+.sliders ul h3{
+    z-index: 2;
+    position: absolute;
+}
+.slider ul li img{
+    width: 100%;
+    height: 750px;
+    border: 2px solid black;
+}
+.slider ul{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 400%;
+
+    animation: slider 18s infinite;
+    animation-timing-function: linear;
+}
+.slider li{
+    width: 100%;
+}
+
+/* ANIMACIONES */
+@keyframes slider{
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+
 /* @MEDIA QUERY */
 @media screen and (max-width:965px) {
     nav ul li a {
