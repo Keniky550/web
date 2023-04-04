@@ -8,6 +8,7 @@
     <title>Oficina de Calidad Académica y Acreditación</title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="icon" href="/img/logo-occaa.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 </head>
 
@@ -89,22 +90,36 @@
                 </div>
             </a>
         </article>
-        <article class="pictures">
+        <article id="slider-box" class="carousel slide" data-ride="carousel">
             <h2>ÚLTIMAS GALERIAS</h2>
-            <section class="slider">
-                <ul>
-                    <li><img id="slider-1" src="/img/Trabajo evaluacion.jpg" alt=""></li>
-                    <li><img id="slider-2" src="/img/Reunion con el decano.jpg" alt=""></li>
-                    <li><img id="slider-3" src="/img/Visita evaluadores.jpg" alt=""></li>
-                    <li><img id="slider-4" src="/img/Sesion Inugural.jpg" alt=""></li>
-                </ul>
-                <div class="slider-bottom">
-                    <a href="#slider-1"></a>
-                    <a href="#slider-2"></a>
-                    <a href="#slider-3"></a>
-                    <a href="#slider-4"></a>
+            <ol class="carousel-indicators">
+                <li data-target="#slider-box" data-slide-to="0" class="active"></li>
+                <li data-target="#slider-box" data-slide-to="1"></li>
+                <li data-target="#slider-box" data-slide-to="2"></li>
+                <li data-target="#slider-box" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/img/Trabajo evaluacion.jpg" alt="" class="d-block w-100">
                 </div>
-            </section>
+                <div class="carousel-item">
+                    <img src="/img/Reunion con el decano.jpg" alt="" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="/img/Visita evaluadores.jpg" alt="" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="/img/Sesion Inugural.jpg" alt="" class="d-block w-100">
+                </div>
+            </div>
+            <a href="#slider-box" class="carousel-control-prev" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </a>
+            <a href="#slider-box" class="carousel-control-next" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </a>
         </article>
     </main>
     <footer>
@@ -191,7 +206,7 @@
     <!-- javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery.js"></script>
+    <!--     <script src="js/jquery.js"></script>
     <script src="js/jquery.easing.1.3.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.fancybox.pack.js"></script>
@@ -201,7 +216,8 @@
     <script src="js/portfolio/setting.js"></script>
     <script src="js/jquery.flexslider.js"></script>
     <script src="js/animate.js"></script>
-    <script src="js/custom.js"></script>
+    <script src="js/custom.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 
 </html>
