@@ -41,7 +41,7 @@ header section h1 {
     font-size: 4rem;
     font-weight: bold;
     background-color: rgba(163, 178, 199, 80%);
-    /* display: inline-flex; */
+    display: inline-flex;
 }
 
 header div a img {
@@ -141,7 +141,7 @@ section.item img:hover {
     background-color: rgba(163, 178, 199, 30%);
     display: flex;
     flex-direction: row;
-    gap: 0 5rem;
+    gap: 1rem 5rem;
     flex-wrap: wrap;
     padding: 1rem 0 3rem 0;
     position: relative;
@@ -159,6 +159,7 @@ section.item img:hover {
     border: 1px solid black ;
     border-radius: 50px;
 }
+
 .info img{
     width: 202px;
     height: 100px;
@@ -168,20 +169,21 @@ section.item img:hover {
     background-color: white;
 }
 
-    /*PICTURE */
+    /*PICTURES */
 .pictures{
     text-align: center;
+}
+.pictures h2{
+    font-size: 3rem;
 }
 .slider{
     width: 100%;
     margin: auto;
     overflow: hidden;
     position: relative;
+    z-index: 1;
 }
-.sliders ul h3{
-    z-index: 2;
-    position: absolute;
-}
+
 .slider ul li img{
     width: 100%;
     height: 750px;
@@ -200,6 +202,23 @@ section.item img:hover {
     width: 100%;
 }
 
+.slider-bottom{
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.5rem;
+    left: 50%;
+    /* transform: translateX(-50%); */
+    z-index: 2;
+}
+
+.slider-bottom a{
+
+    width: .5rem;
+    height: .5rem;
+    border-radius: 50%;
+    background-color: #ffff;
+}
 /* ANIMACIONES */
 @keyframes slider{
     0% {margin-left: 0;}
